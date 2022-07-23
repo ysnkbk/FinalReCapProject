@@ -20,6 +20,8 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<CarImage> CarImages { get; set; }
         public DbSet<OperationClaim> OperationsClaims { get; set; }
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Rental> Rentals { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>().ToTable("Users");
